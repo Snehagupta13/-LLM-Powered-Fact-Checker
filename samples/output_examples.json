@@ -1,1 +1,135 @@
-[]
+[
+  {
+    "input_text": "The Indian government has announced free electricity to all farmers starting July 2025.",
+    "claims": [
+      {
+        "claim": "The Indian government has announced free electricity to all farmers starting July 2025.",
+        "entities": [
+          {"text": "Indian government", "label": "ORG"},
+          {"text": "farmers", "label": "GROUP"},
+          {"text": "July 2025", "label": "DATE"}
+        ],
+        "retrieved_facts": [
+          {
+            "index": 37,
+            "score": 0.61,
+            "statement": "The Ministry of Power clarified that no nationwide free electricity scheme for farmers was approved as of 2024.",
+            "source": "PIB"
+          }
+        ],
+        "analysis": {
+          "verdict": "False",
+          "evidence": [
+            "The Ministry of Power clarified that no nationwide free electricity scheme for farmers was approved as of 2024."
+          ],
+          "reasoning": "Evidence explicitly contradicts the claim.",
+          "confidence": 0.98
+        }
+      }
+    ]
+  },
+  {
+    "input_text": "The government launched the Green Hydrogen Mission to promote clean energy.",
+    "claims": [
+      {
+        "claim": "The government launched the Green Hydrogen Mission to promote clean energy.",
+        "entities": [
+          {"text": "Green Hydrogen Mission", "label": "PROGRAM"},
+          {"text": "clean energy", "label": "TOPIC"}
+        ],
+        "retrieved_facts": [
+          {
+            "index": 11,
+            "score": 0.79,
+            "statement": "The government approved the Green Hydrogen Mission to promote clean energy.",
+            "source": "PIB"
+          }
+        ],
+        "analysis": {
+          "verdict": "True",
+          "evidence": [
+            "The government approved the Green Hydrogen Mission to promote clean energy."
+          ],
+          "reasoning": "Evidence fully supports the claim.",
+          "confidence": 0.94
+        }
+      }
+    ]
+  },
+  {
+    "input_text": "India approved a nationwide farm loan waiver for all farmers in 2024.",
+    "claims": [
+      {
+        "claim": "India approved a nationwide farm loan waiver for all farmers in 2024.",
+        "entities": [
+          {"text": "India", "label": "GPE"},
+          {"text": "farmers", "label": "GROUP"},
+          {"text": "2024", "label": "DATE"}
+        ],
+        "retrieved_facts": [
+          {
+            "index": 49,
+            "score": 0.64,
+            "statement": "The government clarified that no nationwide farm loan waiver was announced in 2024.",
+            "source": "PIB"
+          }
+        ],
+        "analysis": {
+          "verdict": "False",
+          "evidence": [
+            "The government clarified that no nationwide farm loan waiver was announced in 2024."
+          ],
+          "reasoning": "Evidence directly contradicts the claim.",
+          "confidence": 0.97
+        }
+      }
+    ]
+  },
+  {
+    "input_text": "India will build 5 new spaceports by 2030.",
+    "claims": [
+      {
+        "claim": "India will build 5 new spaceports by 2030.",
+        "entities": [
+          {"text": "India", "label": "GPE"},
+          {"text": "2030", "label": "DATE"}
+        ],
+        "retrieved_facts": [],
+        "analysis": {
+          "verdict": "Unverifiable",
+          "evidence": [],
+          "reasoning": "No factual data in the knowledge base supports or refutes this claim.",
+          "confidence": 0.42
+        }
+      }
+    ]
+  },
+  {
+    "input_text": "The Ministry of Health approved the rollout of HPV vaccines for teenage girls.",
+    "claims": [
+      {
+        "claim": "The Ministry of Health approved the rollout of HPV vaccines for teenage girls.",
+        "entities": [
+          {"text": "Ministry of Health", "label": "ORG"},
+          {"text": "HPV vaccines", "label": "PRODUCT"}
+        ],
+        "retrieved_facts": [
+          {
+            "index": 19,
+            "score": 0.84,
+            "statement": "The Ministry of Health approved the rollout of HPV vaccines for teenage girls.",
+            "source": "PIB"
+          }
+        ],
+        "analysis": {
+          "verdict": "True",
+          "evidence": [
+            "The Ministry of Health approved the rollout of HPV vaccines for teenage girls."
+          ],
+          "reasoning": "Retrieved evidence fully supports the claim.",
+          "confidence": 0.99
+        }
+      }
+    ]
+  }
+]
