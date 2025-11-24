@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-fact-checker"
+version = "0.1.0"
+description = "LLM-powered fact checker with embedding-based retrieval"
+authors = [
+  {name = "Your Name", email = "you@example.com"},
+]
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0.0",
+  "numpy>=1.24.0",
+  "sentence-transformers>=2.2.2",
+  "faiss-cpu>=1.7.4",
+  "openai>=1.30.0",
+  "python-dotenv>=1.0.0",
+  "spacy>=3.7.0",
+  "streamlit>=1.36.0",
+  "gradio>=4.0.0",
+  "langchain>=1.0.8",
+  "langchain-groq>=1.0.1",
+  "groq>=0.36.0",
+  "tqdm>=4.66.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
